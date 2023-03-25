@@ -6,15 +6,6 @@ This is not a perfect clone, the main purpose of this project is to explore and 
 
 ## Development Environment
 
-- Install Fonts
-
-```bash
-# https://github.com/Homebrew/homebrew-cask-fonts
-brew tap homebrew/cask-fonts
-brew install font-source-sans-pro
-brew install font-roboto
-```
-
 - Install [Typst](https://github.com/typst/typst)
 
 - Install [Just](https://github.com/casey/just)

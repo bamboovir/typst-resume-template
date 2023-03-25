@@ -79,23 +79,13 @@
     outlined: false,
   )
   
-  // TODO: change name font to Roboto
-  // https://github.com/typst/typst/issues/185
   let name = {
     align(center)[
       #pad(bottom: 5pt)[
         #block[
-          #set text(size: 32pt)
-          #text(
-            weight: "thin",
-            style: "normal",
-            author.firstname + " "
-          )
-          #text(
-            weight: "bold",
-            style: "normal",
-            author.lastname
-          )
+          #set text(size: 32pt, style: "normal", font: ("Roboto"))
+          #text(weight: "thin")[#author.firstname]
+          #text(weight: "bold")[#author.lastname]
         ]
       ]
     ]
@@ -122,27 +112,27 @@
     let github_icon = box(image("assets/icons/square-github.svg"))
     let email_icon = box(image("assets/icons/square-envelope-solid.svg"))
     let phone_icon = box(image("assets/icons/square-phone-solid.svg"))
-    let pipe = box(text("|"))
-
+    let separator = box(width: 5pt)
+    
     align(center)[
       #block[
         #align(horizon)[
           #phone_icon
           #box[#text(author.phone)]
-          #pipe
+          #separator
           #email_icon
           #box[#link("mailto:" + author.email)[#author.email]]
-          #pipe
+          #separator
           #github_icon
           #box[#link("https://github.com/" + author.github)[#author.github]]
-          #pipe
+          #separator
           #linkedin_icon
           #box[
             #link("https://www.linkedin.com/in/" + author.linkedin)[#author.linkedin]
           ]
         ]
       ]
-    ]
+    ] 
   }
 
   name
@@ -159,14 +149,16 @@
   )
   align(left)[
     #smallcaps[
-      #text[#title.slice(0, 3)]#strong[#text[#title.slice(3)]]
+      // #text[#title.slice(0, 3)]#strong[#text[#title.slice(3)]]
+      #strong[#text[#title]]
     ]
     #box(width: 1fr, line(length: 100%))
   ]
 }
 
 #let resume_item(body) = {
-  set text(weight: "light", size: 10pt)
+  set text(size: 10pt, style: "normal", weight: "light")
+  set par(leading: 0.65em)
   body
 }
 
@@ -177,7 +169,7 @@
 
 #let resume_degree(body) = {
   set text(size: 10pt, weight: "light")
-  body
+  smallcaps[#body]
 }
 
 #let resume_organization(body) = {
@@ -186,7 +178,7 @@
 }
 
 #let resume_location(body) = {
-  set text(size: 12pt, style: "italic", weight: "medium")
+  set text(size: 12pt, style: "italic", weight: "light")
   body
 }
 
@@ -201,6 +193,7 @@
 }
 
 #let resume_gpa(numerator, denominator) = {
+  set text(size: 12pt, style: "italic", weight: "light")
   text[Cumulative GPA: #box[#strong[#numerator] / #denominator]]
 }
 
@@ -268,7 +261,7 @@
 
 #let skill_item(category, items) = {
   set block(above: 1.0em, below: 1.0em)
-
+  
   grid(
     columns: (18fr, 80fr),
     gutter: 10pt,
@@ -276,6 +269,7 @@
       #resume_category[#category]
     ],
     align(left)[
+      #set text(size: 11pt, style: "normal", weight: "light")
       #items.join(", ")
     ],
   )
