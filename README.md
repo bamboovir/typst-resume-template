@@ -1,8 +1,14 @@
-# Typst-Resume-Template
+# Typst Resume Template
+
+A simple resume template for [typst.app](https://typst.app/).
 
 Aesthetic style inspired by the [Awesome-CV](https://github.com/posquit0/Awesome-CV) project.
 
 This is not a perfect clone, the main purpose of this project is to explore and experiment with Typst's typography features.
+
+## Sample
+
+![sample](./assets/image/sample.png)
 
 ## Development Environment
 
@@ -42,3 +48,9 @@ docker run --rm -t -v \
 [**Roboto**](https://github.com/google/roboto) is the default font on Android and ChromeOS, and the recommended font for Google’s visual language, Material Design.
 
 [**Source Sans Pro**](https://github.com/adobe-fonts/source-sans-pro) is a set of OpenType fonts that have been designed to work well in user interface (UI) environments.
+
+## Declaration
+
+If you want to see a more realistic example rendered using this template, check [this](https://github.com/bamboovir/typst-resume-template/blob/main/huiming-sun-sde-resume.pdf).
+
+You are free to take my .typ template and modify it to create your own resume. **Please don't use my resume for anything else without my permission, though!**
