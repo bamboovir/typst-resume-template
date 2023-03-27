@@ -1,4 +1,4 @@
-#import "template.typ": *
+#import "templates/awesome/template.typ": *
 
 #show: resume.with(
   author: (
@@ -108,6 +108,11 @@
     "Aaaa", 
     "Aaaaaaa", 
     "Aaaa", 
+    "Aaaaa",
+    "A/A++",
+    "Aaaa", 
+    "Aaaaaaa", 
+    "Aaaa", 
     "Aaaaa"
   )
 )
@@ -118,14 +123,12 @@
     strong[Aaaaa],
     strong[Aaaaaa], 
     strong[Aaaa], 
-    strong[Aaaaaa], 
-    strong[Aaaaaaa], 
-    strong[Aaaa],
+    "Aaaaaa", 
+    "Aaaaaaa", 
+    "Aaaa",
     "A/A++",
     "Aaaa", 
     "Aaaaaaa", 
-    "Aaaa", 
-    "Aaaaa"
   )
 )
 
@@ -137,12 +140,10 @@
     strong[Aaaa], 
     strong[Aaaaaa], 
     strong[Aaaaaaa], 
-    strong[Aaaa],
+    "Aaaa",
     "A/A++",
     "Aaaa", 
     "Aaaaaaa", 
-    "Aaaa", 
-    "Aaaaa"
   )
 )
 
@@ -158,24 +159,6 @@
     "A/A++",
     "Aaaa", 
     "Aaaaaaa", 
-    "Aaaa", 
-    "Aaaaa"
-  )
-)
-
-#skill_item(
-  "Language",
-  (
-    strong[Aaaaa],
-    strong[Aaaaaa], 
-    strong[Aaaa], 
-    strong[Aaaaaa], 
-    strong[Aaaaaaa], 
-    strong[Aaaa],
-    "A/A++",
-    "Aaaa", 
     "Aaaaaaa", 
-    "Aaaa", 
-    "Aaaaa"
   )
 )
