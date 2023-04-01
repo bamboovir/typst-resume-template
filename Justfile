@@ -2,8 +2,8 @@ set shell:= ["bash", "-uceE"]
 
 PROJECT_ROOT := `git rev-parse --show-toplevel`
 OUTPUT_FILENAME := "resume.pdf"
-# TEMPLATE := "latex"
-TEMPLATE := "awesome"
+TEMPLATE := "latex"
+# TEMPLATE := "awesome"
 FONT_PATH := PROJECT_ROOT / "templates" / TEMPLATE / "assets" / "fonts"
 
 default:

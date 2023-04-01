@@ -1,4 +1,4 @@
-#import "templates/awesome/template.typ": *
+#import "templates/latex/template.typ": *
 
 #show: resume.with(
   author: (
@@ -39,7 +39,7 @@
   Aug. 0000 - Aug. 0000
 ]
 
-#resume_section("Work & Research Experience")
+#resume_section("Experience")
 
 #work_experience_item_header(
   "Aaaaaa Aaaaaaaa",

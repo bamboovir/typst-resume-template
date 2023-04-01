@@ -10,12 +10,11 @@ Aesthetic style inspired by the following project:
 
 This is not a perfect clone, the main purpose of this project is to explore and experiment with Typst's typography features.
 
-## Sample
+## [Sample](./resume.pdf)
 
 ![awesome-sample](./assets/image/awesome-sample.png)
 
 ![latex-sample](./assets/image/latex-sample.png)
-
 
 ## Development Environment
 
