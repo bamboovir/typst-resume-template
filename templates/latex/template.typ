@@ -52,7 +52,7 @@
     paper: "a4",
     margin: (left: 0.30in, right: 0.30in, top: 0.20in, bottom: 0.20in),
     footer: [
-      #set text(fill: gray, size: 8pt, font: ("Source Sans Pro"))
+      #set text(fill: gray, size: 8pt, font: ("Source Sans Pro"), ligatures: false,)
       #justify_align_3[
         #smallcaps[#date]
       ][
@@ -94,7 +94,7 @@
     set text(
       size: 9pt,
       weight: "regular",
-      
+      ligatures: false,
     )
     align(center)[
       #smallcaps[
@@ -161,12 +161,12 @@
 }
 
 #let resume_time(body) = {
-  set text(weight: "light", style: "normal", size: 9pt)
+  set text(size: 9pt, weight: "light", style: "normal")
   body
 }
 
 #let resume_degree(body) = {
-  set text(size: 10pt, weight: "light")
+  set text(size: 10pt, weight: "regular")
   smallcaps[#body]
 }
 
@@ -181,7 +181,7 @@
 }
 
 #let resume_position(body) = {
-  set text(size: 10pt, weight: "regular")
+  set text(size: 9pt, weight: "regular", ligatures: false,)
   smallcaps[#body]
 }
 

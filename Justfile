@@ -10,10 +10,10 @@ default:
     @just --list
 
 build:
-    @typst --root "{{PROJECT_ROOT}}" --font-path "{{FONT_PATH}}" resume.typ "{{OUTPUT_FILENAME}}"
+    @typst --root "{{PROJECT_ROOT}}" --font-path "{{FONT_PATH}}" compile resume.typ "{{OUTPUT_FILENAME}}"
 
 dev:
-    @typst --root "{{PROJECT_ROOT}}" --font-path "{{FONT_PATH}}" --watch resume.typ "{{OUTPUT_FILENAME}}"
+    @typst --root "{{PROJECT_ROOT}}" --font-path "{{FONT_PATH}}" watch resume.typ "{{OUTPUT_FILENAME}}"
 
 font:
     @typst --font-path "{{FONT_PATH}}" --fonts --variants
