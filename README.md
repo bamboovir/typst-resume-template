@@ -37,12 +37,7 @@ just dev
 ## Containerized Build
 
 ```bash
-# TODO
-docker run --rm -t -v \
-  "$(pwd):/mnt" \
-  -w "/mnt" \
-  typst:latest \
-  resume.typ
+just containerized-build
 ```
 
 ## Credit
